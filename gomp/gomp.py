@@ -353,13 +353,13 @@ def process_commands():
 
     # Grab inline history of both branches
     source_history = run(
-        ['git', '--no-pager', 'log', src, '--pretty=oneline'],
+        ['git', '--no-pager', 'log', src, '--pretty=oneline', '--no-color'],
         stdout=PIPE,
         universal_newlines=True,
         check=False,
     ).stdout.splitlines()
     destination_history = run(
-        ['git', '--no-pager', 'log', dest, '--pretty=oneline'],
+        ['git', '--no-pager', 'log', dest, '--pretty=oneline', '--no-color'],
         stdout=PIPE,
         universal_newlines=True,
         check=False,
