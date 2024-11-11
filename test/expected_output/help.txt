@@ -4,7 +4,7 @@ positional arguments:
   src          Left side branch
   dest         Right side branch
 
-optional arguments:
+options:
   -h, --help   show this help message and exit
   --key        Display with color code
   --recut      Recut view
